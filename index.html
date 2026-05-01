@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
     <title>Form</title>
 </head>
 <body>
-    <div class="Con">
-    <h1>นี้คือแบบฟอร์มเพื่อเข้าชิงเงิน10วอ</h1>
     
-    <form id="FORM">
-       
+    <h1>นี้คือแบบฟอร์มเพื่อเข้าชิงเงิน10วอ</h1>
+    <div class="Con">
+    
 
+    <form class="FORM" id="FORM">
+       <label for="NAME">ชื่อต้น</label><br>
+       <input type="text" name="NAME" id="NAME" placeholder="ชื่อ"><br>
+
+       <label for="NAME">นามสกุล</label><br>
+       <input type="text" name="LAST" id="LAST" placeholder="นามสกุล"><br>
+
+       <label for="NUMBER">เบอร์โทร</label><br>
+       <input type="text" name="NUMBER" id="NUMBER" placeholder="เบอร์โทร"><br>
+
+       <label for="EMAIL">อีเมล์</label><br>
+       <input type="email" name="EMAIL" id="EMAIL" placeholder="Email"><br>
+
+       <label for="DATE">วันที่สมัคร</label><br>
+       <input type="date" name="DATE" id="DATE"><br>
+
+       <label for="REASON">เหตุผลที่เจอเว็บนี้ (ตัวเลือก)</label><br>
+       <input type="text" name="REASON" id="REASON" placeholder="เหตุผลที่เจอเว็บนี้"><br>
+
+       <input type="checkbox" name="CHECK" id="CHECK">
+       <label for="CHECK">ทำให้มั่นใจว่าคุณอ่านเงื่อนไขเราครบทั้งหมด</label><br>
+
+       <button type="submit">ตกลง</button>
     </form>
     </div>
+
+    <script src="/Javascript.js"></script>
     
 </body>
 </html>
