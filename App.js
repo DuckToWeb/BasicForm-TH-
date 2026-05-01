@@ -6,7 +6,7 @@ const app = exp();
 app.use(exp.json());
 app.use(cors());
 
-const Port = 3060
+const Port = process.env.PORT || 3060
 
 app.use(exp.static(path.join(__dirname, '/Pubilc')))
 
