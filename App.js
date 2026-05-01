@@ -15,11 +15,6 @@ const page = path.join(__dirname, '/index.html')
 let Data = [];
 
 
-app.get('/Sign', (req,res) => {
-    res.sendFile(page)
-})
-
-
 app.post('/SIGN', (req,res)=> {
     let NewData = {
         Name : req.body.Name,
@@ -37,7 +32,7 @@ app.post('/SIGN', (req,res)=> {
 })
 
 app.use('/', (req,res) => {
-    res.status(404).send('Not Found!')
+    res.sendFile(page)
 })
 
 app.listen(Port, ()=> {
